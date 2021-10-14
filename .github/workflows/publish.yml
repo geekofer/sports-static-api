@@ -28,5 +28,6 @@ jobs:
     - run: |
           git config --global user.name 'Jorge Chavez'
           git config --global user.email 'jorgecha48@gmail.com'
-          git commit -am "Automated report"
+          git add .
+          git commit -am "Automated api" date +%s 
           git push
