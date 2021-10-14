@@ -29,5 +29,5 @@ jobs:
           git config --global user.name 'Jorge Chavez'
           git config --global user.email 'jorgecha48@gmail.com'
           git add .
-          git commit -am "Automated api" date +%s 
+          git commit -am "Automated api"
           git push
