@@ -1,0 +1,23 @@
+{
+  "name": "sports-static-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekofer/sports-static-api.git"
+  },
+  "keywords": [],
+  "author": "Jorge Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekofer/sports-static-api/issues"
+  },
+  "homepage": "https://github.com/geekofer/sports-static-api#readme",
+  "devDependencies": {
+    "axios": "^0.23.0"
+  }
+}
