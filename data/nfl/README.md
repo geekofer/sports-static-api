@@ -1,0 +1,1 @@
+NFL STATIC API
