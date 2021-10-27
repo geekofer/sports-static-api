@@ -25,7 +25,7 @@ const mapperScoreboard = (data) => {
     })),
   }));
 
-  return { scoreboardHeader, schedule };
+  return { ...scoreboardHeader, schedule };
 };
 
 module.exports = mapperScoreboard;
