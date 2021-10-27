@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "get:nba:scoreboard":"node index.js"
+    "get:nba:scoreboard": "node index.js getNBAScoreboard"
   },
   "repository": {
     "type": "git",
