@@ -22,6 +22,7 @@
     "axios": "^0.23.0"
   },
   "dependencies": {
+    "puppeteer": "^10.4.0",
     "run-func": "^1.0.5"
   }
 }

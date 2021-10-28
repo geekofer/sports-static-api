@@ -6,7 +6,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */2 * * *'
 jobs:
   quality:
     runs-on: ${{ matrix.os }}
@@ -23,7 +23,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         token: ${{ secrets.PAT-SPORTS-STATIC-API }}
     - run: npm ci
+    - run: npm install
     - run: npm run get:nba:scoreboard
+    - run: npm run get:nba:standings
     - run: ls data
     - run: |
           git config --global user.name ${{ secrets.GH_USERNAME }}
