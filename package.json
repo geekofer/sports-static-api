@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "get:nba:scoreboard": "node index.js getNBAScoreboard"
+    "get:nba:scoreboard": "run-func index.js getNBAScoreboard",
+    "get:nba:standings": "run-func index.js getNBASeasonStandings"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/geekofer/sports-static-api#readme",
   "devDependencies": {
     "axios": "^0.23.0"
+  },
+  "dependencies": {
+    "run-func": "^1.0.5"
   }
 }
