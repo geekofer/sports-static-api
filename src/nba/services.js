@@ -3,6 +3,7 @@ const environment = require("../evironment");
 
 const { storage } = require("../utils/data.storage");
 const mapperScoreboard = require("./mapper.scoreboard");
+const getSeasonStandings = require('./scrapping/usescase.statings.br');
 
 const getScoreboard = async () => {
   try {
@@ -24,4 +25,4 @@ const getScoreboard = async () => {
   }
 };
 
-module.exports = { getScoreboard };
+module.exports = { getScoreboard, getSeasonStandings };
