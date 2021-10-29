@@ -26,6 +26,7 @@ jobs:
     - run: npm install
     - run: npm run get:nba:scoreboard
     - run: npm run get:nba:standings
+    - run: npm run get:nba:players
     - run: ls data
     - run: |
           git config --global user.name ${{ secrets.GH_USERNAME }}
