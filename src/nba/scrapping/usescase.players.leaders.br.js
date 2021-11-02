@@ -16,7 +16,7 @@ async function scrappUseCasePlayers() {
     await page.goto(
       'https://www.basketball-reference.com/leagues/NBA_2022.html',
       {
-        waitUntil: 'networkidle0',
+        waitUntil: 'domcontentloaded',
       },
     );
     const data = await page.evaluate(() => {
