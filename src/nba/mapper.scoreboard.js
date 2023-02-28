@@ -8,7 +8,7 @@ const scoreboardHeader = {
 
 const mapperScoreboard = (data) => {
   const schedule = data.leagueSchedule.gameDates.map((g, index) => ({
-    date: g.gameDate.split(" ")[0],
+    date: g.gameDate.split(" ")[0].split("/").map( e => parseInt(e)).join("/"),
     games: g.games.map((game) => ({
       gameId: game.gameId,
       gameCode: game.gameCode,
